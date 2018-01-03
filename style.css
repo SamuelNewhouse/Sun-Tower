@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed');
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/*! START: Modified normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+/* END: modifed normalize.css v7.0.0 */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+	position: relative;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* General Styling                                                           */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+body {
+	background-color: white;
+	color: rgb(0, 35, 44);
+	font-size: 1.11em;
+}
+
+div {
+	position: relative;
+}
+
+p, h1, h2, h3, ul, li, footer {
+	margin: 1em auto 0 auto;
+	letter-spacing: 0.09em;
+	word-spacing: 0.19em;
+	text-align: center;
+}
+
+h1 {
+	margin: 0.2em 0;
+}
+
+p {
+	border-width: 0 2px;
+	border-color: black;
+	border-style: solid;
+	text-align: justify;	
+	padding: 0 0.5em;
+}
+
+abbr {
+	letter-spacing: 0.1em;
+	word-spacing: 0;
+}
+
+ul, li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;	
+}
+
+li {
+	letter-spacing: 0.01em;
+	word-spacing: 0.01em;
+}
+
+a {
+	font-family: 'Stint Ultra Condensed', cursive;
+	font-size: 1.2em;	
+	text-shadow: 1px 1px 0 rgb(255, 255, 118), -1px 1px 0 rgb(255, 255, 118), 2px 0 0 rgb(255, 255, 118), -2px 0 0 rgb(255, 255, 118);
+	color: rgb(0, 0, 97);
+}
+
+a:hover {	
+	text-shadow: 1px 1px 0 rgb(255, 182, 255), -1px 1px 0 rgb(255, 182, 255), 2px 0 0 rgb(255, 182, 255), -2px 0 0 rgb(255, 182, 255);
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Primary Content Styling                                                   */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.intro > header > h1 {
+	background-color: rgb(212, 212, 212);
+}
+
+header > h2, .summary, .explanation, .benefits {
+	font-style: italic;
+}
+
+.summary > p,
+.explanation > p,
+.benefits > p,
+.requirements > p:nth-of-type(5) {
+	max-width: 50%;
+	line-height: 1.4em;	
+	background-color: rgb(255, 225, 225);
+	font-style: italic;
+}
+
+.summary > p::before,
+.explanation > p::before,
+.benefits > p::before,
+.requirements > p:nth-of-type(5)::before {	
+	content: "";
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: -50px;
+	top: calc(100% / 2 - 10px);
+	background: radial-gradient(rgba(255, 255, 118,1) 20%, rgba(255,0,0,0.5), rgba(255,255,255,0) 75%);		
+}
+
+.summary > p::after,
+.explanation > p::after,
+.benefits > p::after,
+.requirements > p:nth-of-type(5)::after {	
+	content: "";
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: -50px;
+	top: calc(100% / 2 - 10px);
+	background: radial-gradient(rgba(255, 255, 118,1) 20%, rgba(255,0,0,0.5), rgba(255,255,255,0) 75%);		
+}
+
+.preamble > p:nth-of-type(1),
+.participation > p:nth-of-type(1),
+.requirements > p:nth-of-type(1) {
+	max-width: 70%;	
+}
+
+.preamble > p:nth-of-type(2),
+.participation > p:nth-of-type(2),
+.requirements > p:nth-of-type(2) {	
+	max-width: 80%;
+}
+
+.preamble > p:nth-of-type(3),
+.participation > p:nth-of-type(3),
+.requirements > p:nth-of-type(3) {
+	max-width: 90%;
+}
+.requirements > p:nth-of-type(4) {
+	max-width: 100%;	
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Design Selection Styling                                                  */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.page-wrapper { /* Flex container */
+	max-width: 800px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar {
+	padding: 1em 0;
+	order: -1; /* Move to top of document */
+}
+
+.wrapper { /* designs container */		
+	background: radial-gradient(rgba(255,255,0,0.6), rgba(255,255,255,0) 60%);	
+}
+
+.design-selection > h3,
+.design-archives > h3,
+.zen-resources > h3{
+	font-style: italic;
+	text-shadow: 0 0 2px rgb(203, 255, 173);
+}
+
+.design-selection > h3 {	
+	margin: 0 0 4em 0;
+}
+
+.design-selection > nav li a:first-child {
+	font-size: 1.3em;
+	color: black;	
+}
+.design-selection > nav li a:nth-last-child(1) {
+	font-size: 1em;
+	font-style: italic;
+}
+
+li {	
+	display: inline-block;
+	width: 49%;
+}
+
+.design-selection > nav > ul > li:nth-of-type(odd) {
+	padding-right: 0.35em;
+	text-align: right;
+	transform-origin: 100% 50%;	
+	background: radial-gradient(farthest-side at 60%,  rgba(255,200,200,1), rgba(255,255,255,0));
+	float: left;
+	clear: both;
+	border-radius: 50%;
+}
+.design-selection > nav > ul > li:nth-of-type(even) {	
+	padding-left: 0.35em;
+	text-align: left;
+	transform-origin: 0% 50%;
+	background: radial-gradient(farthest-side at 40%,  rgba(255,200,200,1), rgba(255,255,255,0));
+	float: right;
+	display: block;
+	border-radius: 50%;
+}
+
+.design-selection > nav > ul > li:nth-of-type(1) {
+	transform: rotate(21deg);
+}
+.design-selection > nav > ul > li:nth-of-type(2) {
+	transform: rotate(-21deg);
+}
+.design-selection > nav > ul > li:nth-of-type(3) {
+	width: 45%;	
+	transform: rotate(7deg);
+}
+.design-selection > nav > ul > li:nth-of-type(4) {
+	width: 45%;		
+	transform: rotate(-7deg);
+}
+.design-selection > nav > ul > li:nth-of-type(5) {
+	width: 45%;
+	transform: rotate(-7deg);
+}
+.design-selection > nav > ul > li:nth-of-type(6) {
+	width: 45%;
+	transform: rotate(7deg);
+}
+.design-selection > nav > ul > li:nth-of-type(7) {	
+	transform: rotate(-21deg);
+}
+.design-selection > nav > ul > li:nth-of-type(8) {	
+	transform: rotate(21deg);	
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Archives Styling                                                          */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.design-archives {
+	clear: both;	
+	padding-top: 0.1em;
+}
+
+.design-archives > h3 {	
+	margin: 2.9em 0 0 0;
+}
+
+.design-archives > nav > ul {
+	display: flex;
+	justify-content: center;
+}
+.design-archives > nav > ul li {
+	margin: 0 0.15em;
+	width: 7em;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Resources Styling                                                         */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.zen-resources > h3 {
+	margin: 1em 0 0 0;
+}
+
+.zen-resources > ul {
+	display: flex;
+	justify-content: space-around;	
+}
+
+.zen-resources > ul li {
+	margin: 0 0.5em;
+	min-width: 12%;
+}
