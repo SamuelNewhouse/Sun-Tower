@@ -44,7 +44,7 @@ html {
 }
 *, *:before, *:after {
 	box-sizing: inherit;
-	position: relative;
+	position: relative;	
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -109,8 +109,16 @@ a:hover {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* Primary Content Styling                                                   */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-.intro > header > h1 {
-	background-color: rgb(212, 212, 212);
+[role="banner"] h1 {
+	margin: 0.6em 0 0 0;
+	background: radial-gradient(rgba(0, 225, 255, 0.6), rgba(255, 255, 255, 0.01) 75%);		
+	letter-spacing: 0.35em;
+	word-spacing: 0.3em;
+	font-size: 40px;
+}
+
+[role="banner"] h2 {
+	margin: 0.6em 0 0 0;
 }
 
 header > h2, .summary, .explanation, .benefits {
@@ -186,8 +194,8 @@ header > h2, .summary, .explanation, .benefits {
 	flex-direction: column;
 }
 
-.sidebar {
-	padding: 1em 0;
+.sidebar {	
+	margin: 1em 0 0 0;
 	order: -1; /* Move to top of document */
 }
 
@@ -228,6 +236,7 @@ li {
 	float: left;
 	clear: both;
 	border-radius: 50%;
+	z-index: 1; /* Make sure links hoverable. */
 }
 .design-selection > nav > ul > li:nth-of-type(even) {	
 	padding-left: 0.35em;
@@ -237,6 +246,7 @@ li {
 	float: right;
 	display: block;
 	border-radius: 50%;
+	z-index: 1; /* Make sure links are hoverable. */
 }
 
 .design-selection > nav > ul > li:nth-of-type(1) {
@@ -277,7 +287,7 @@ li {
 }
 
 .design-archives > h3 {	
-	margin: 2.9em 0 0 0;
+	margin: 3em 0 0.2em 0;
 }
 
 .design-archives > nav > ul {
@@ -293,7 +303,7 @@ li {
 /* Resources Styling                                                         */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 .zen-resources > h3 {
-	margin: 1em 0 0 0;
+	margin: 1em 0 0.2em 0;
 }
 
 .zen-resources > ul {
