@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed');
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-/* Modified normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Modified                                                                  */
+/*     normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 html {
-  line-height: 1.15;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -19,18 +20,18 @@ footer,
 header,
 nav,
 section {
-  display: block;
+	display: block;
 }
 
 a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
 }
 
 abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  text-decoration: underline dotted;
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -40,7 +41,7 @@ html {
 	box-sizing: border-box;
 }
 *, *:before, *:after {
-	box-sizing: inherit;	
+	box-sizing: inherit;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -67,7 +68,7 @@ p {
 	border-width: 0 2px;
 	border-color: black;
 	border-style: solid;
-	text-align: justify;	
+	text-align: justify;
 	padding: 0 0.5em;
 }
 
@@ -80,19 +81,19 @@ abbr {
 ul, li {
 	list-style-type: none;
 	padding: 0;
-	margin: 0;	
+	margin: 0;
 	letter-spacing: 0.01em;
 	word-spacing: 0.01em;
 }
 
 a {
 	font-family: 'Stint Ultra Condensed', cursive;
-	font-size: 1.2em;	
+	font-size: 1.2em;
 	text-shadow: 1px 1px 0 rgb(255, 255, 118), -1px 1px 0 rgb(255, 255, 118), 2px 0 0 rgb(255, 255, 118), -2px 0 0 rgb(255, 255, 118);
 	color: rgb(0, 0, 90);
 }
 
-a:hover {	
+a:hover {
 	text-shadow: 1px 1px 0 rgb(255, 182, 255), -1px 1px 0 rgb(255, 182, 255), 2px 0 0 rgb(255, 182, 255), -2px 0 0 rgb(255, 182, 255);
 }
 
@@ -100,7 +101,7 @@ a:hover {
 /* Primary Content Styling                                                   */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 [role="banner"] h1 {
-	background: radial-gradient(rgba(0, 225, 255, 0.6), rgba(255, 255, 255, 0.01) 75%);		
+	background: radial-gradient(rgba(0, 225, 255, 0.6), rgba(255, 255, 255, 0.01) 75%);
 	letter-spacing: 0.35em;
 	word-spacing: 0.3em;
 	font-size: 2.2em;
@@ -120,9 +121,6 @@ header > h2, .summary, .explanation, .benefits {
 .benefits > p,
 .requirements > p:nth-of-type(5) {
 	max-width: 50%;
-	line-height: 1.15em;
-	letter-spacing: 0.05em;
-	word-spacing: 0.10em;
 	background-color: rgb(255, 225, 225);
 	font-style: italic;
 }
@@ -130,12 +128,12 @@ header > h2, .summary, .explanation, .benefits {
 .preamble > p:nth-of-type(1),
 .participation > p:nth-of-type(1),
 .requirements > p:nth-of-type(1) {
-	max-width: 70%;	
+	max-width: 70%;
 }
 
 .preamble > p:nth-of-type(2),
 .participation > p:nth-of-type(2),
-.requirements > p:nth-of-type(2) {	
+.requirements > p:nth-of-type(2) {
 	max-width: 80%;
 }
 
@@ -146,7 +144,7 @@ header > h2, .summary, .explanation, .benefits {
 }
 
 .requirements > p:nth-of-type(4) {
-	max-width: 97%;	
+	max-width: 97%;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -159,13 +157,13 @@ header > h2, .summary, .explanation, .benefits {
 	flex-direction: column;
 }
 
-.sidebar {	
+.sidebar {
 	margin: 1em 0 0 0;
 	order: -1; /* Move to top of document */
 }
 
-.wrapper { /* Designs container */		
-	background: radial-gradient(at 50% 43%, rgba(255,255,0,0.6), rgba(255,255,255,0) 60%);	
+.wrapper { /* Designs container */
+	background: radial-gradient(at 50% 43%, rgba(255,255,0,0.6), rgba(255,255,255,0) 60%);
 }
 
 .design-selection > h3,
@@ -175,20 +173,20 @@ header > h2, .summary, .explanation, .benefits {
 	text-shadow: 0 0 2px rgb(187, 255, 173);
 }
 
-.design-selection > h3 {	
+.design-selection > h3 {
 	margin: 0 0 4em 0;
 }
 
 .design-selection > nav li a:first-child {
 	font-size: 1.3em;
-	color: black;	
+	color: black;
 }
 .design-selection > nav li a:nth-last-child(1) {
 	font-size: 1em;
 	font-style: italic;
 }
 
-li {	
+li {
 	display: block;
 	width: 49%;
 }
@@ -196,14 +194,14 @@ li {
 .design-selection > nav > ul > li:nth-of-type(odd) {
 	padding-right: 0.35em;
 	text-align: right;
-	transform-origin: 100% 50%;	
+	transform-origin: 100% 50%;
 	background: radial-gradient(farthest-side at 60%,  rgba(255,200,200,1), rgba(255,255,255,0));
 	float: left;
 	clear: both;
 	border-radius: 50%;
 	z-index: 1; /* Make sure links are hoverable */
 }
-.design-selection > nav > ul > li:nth-of-type(even) {	
+.design-selection > nav > ul > li:nth-of-type(even) {
 	padding-left: 0.35em;
 	text-align: left;
 	transform-origin: 0% 50%;
@@ -221,11 +219,11 @@ li {
 	transform: rotate(-21deg);
 }
 .design-selection > nav > ul > li:nth-of-type(3) {
-	width: 45%;	
+	width: 45%;
 	transform: rotate(7deg);
 }
 .design-selection > nav > ul > li:nth-of-type(4) {
-	width: 45%;		
+	width: 45%;
 	transform: rotate(-7deg);
 }
 .design-selection > nav > ul > li:nth-of-type(5) {
@@ -236,22 +234,22 @@ li {
 	width: 45%;
 	transform: rotate(7deg);
 }
-.design-selection > nav > ul > li:nth-of-type(7) {	
+.design-selection > nav > ul > li:nth-of-type(7) {
 	transform: rotate(-21deg);
 }
-.design-selection > nav > ul > li:nth-of-type(8) {	
-	transform: rotate(21deg);	
+.design-selection > nav > ul > li:nth-of-type(8) {
+	transform: rotate(21deg);
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* Archives styling                                                          */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 .design-archives {
-	clear: both;	
+	clear: both;
 	padding-top: 0.1em;
 }
 
-.design-archives > h3 {	
+.design-archives > h3 {
 	margin: 3em 0 0.2em 0;
 }
 
@@ -274,7 +272,7 @@ li {
 
 .zen-resources > ul {
 	display: flex;
-	justify-content: space-around;	
+	justify-content: space-around;
 }
 
 .zen-resources > ul li {
@@ -290,11 +288,14 @@ footer {
 	margin-bottom: 2em;
 	padding: 0.2em;
 	border: 2px solid black;
-	border-top: none;	
+	border-top: none;
 	font-size: 1.1em;
 	width: 97%;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Responsive styling                                                        */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 @media(max-width: 960px) {
 	P {
 		letter-spacing: 0.04em;
@@ -322,6 +323,9 @@ footer {
 }
 
 @media(max-width: 480px) {
+	abbr {
+		letter-spacing: 0;
+	}
 	P {
 		letter-spacing: 0.01em;
 		word-spacing: 0.02em;
@@ -337,10 +341,9 @@ footer {
 }
 
 @media(max-width: 320px) {
-	P {		
+	P {
 		letter-spacing: 0;
 		word-spacing: 0;
-		padding: 0;
-		text-align: center;
+		padding: 0.05em;
 	}
 }
