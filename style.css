@@ -43,24 +43,19 @@ html {
 	box-sizing: inherit;	
 }
 
-p {
-	position: relative;
-}
-
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* General styling                                                           */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
 body {
 	background-color: white;
 	color: rgb(0, 35, 44);
-	font-size: 1.11rem;
+	font: normal normal 500 1.11rem/1.5rem TimesNewRoman, "Times New Roman", Times, serif;
 }
 
 p, h1, h2, h3, ul, li, footer {
 	margin: 1em auto 0 auto;
-	letter-spacing: 0.09em;
-	word-spacing: 0.19em;
+	letter-spacing: 0.07em;
+	word-spacing: 0.14em;
 	text-align: center;
 }
 
@@ -79,15 +74,13 @@ p {
 abbr {
 	letter-spacing: 0.1em;
 	word-spacing: 0;
+	color: rgb(61, 28, 28);
 }
 
 ul, li {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;	
-}
-
-li {
 	letter-spacing: 0.01em;
 	word-spacing: 0.01em;
 }
@@ -96,7 +89,7 @@ a {
 	font-family: 'Stint Ultra Condensed', cursive;
 	font-size: 1.2em;	
 	text-shadow: 1px 1px 0 rgb(255, 255, 118), -1px 1px 0 rgb(255, 255, 118), 2px 0 0 rgb(255, 255, 118), -2px 0 0 rgb(255, 255, 118);
-	color: rgb(0, 0, 97);
+	color: rgb(0, 0, 90);
 }
 
 a:hover {	
@@ -111,10 +104,15 @@ a:hover {
 	letter-spacing: 0.35em;
 	word-spacing: 0.3em;
 	font-size: 2.2em;
+	line-height: 1.1em;
 }
 
 header > h2, .summary, .explanation, .benefits {
 	font-style: italic;
+}
+
+.summary > p:first-child {
+	border-top: 2px solid black;
 }
 
 .summary > p,
@@ -122,37 +120,11 @@ header > h2, .summary, .explanation, .benefits {
 .benefits > p,
 .requirements > p:nth-of-type(5) {
 	max-width: 50%;
-	line-height: 1.4em;	
+	line-height: 1.15em;
+	letter-spacing: 0.05em;
+	word-spacing: 0.10em;
 	background-color: rgb(255, 225, 225);
 	font-style: italic;
-}
-
-.summary > p::before,
-.explanation > p::before,
-.benefits > p::before,
-.requirements > p:nth-of-type(5)::before {	
-	content: "";
-	display: block;
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	left: -50px;
-	top: calc(100% / 2 - 10px);
-	background: radial-gradient(rgba(255, 255, 118,1) 20%, rgba(255,0,0,0.5), rgba(255,255,255,0) 75%);		
-}
-
-.summary > p::after,
-.explanation > p::after,
-.benefits > p::after,
-.requirements > p:nth-of-type(5)::after {	
-	content: "";
-	display: block;
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	right: -50px;
-	top: calc(100% / 2 - 10px);
-	background: radial-gradient(rgba(255, 255, 118,1) 20%, rgba(255,0,0,0.5), rgba(255,255,255,0) 75%);		
 }
 
 .preamble > p:nth-of-type(1),
@@ -172,8 +144,9 @@ header > h2, .summary, .explanation, .benefits {
 .requirements > p:nth-of-type(3) {
 	max-width: 90%;
 }
+
 .requirements > p:nth-of-type(4) {
-	max-width: 100%;	
+	max-width: 97%;	
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -191,15 +164,15 @@ header > h2, .summary, .explanation, .benefits {
 	order: -1; /* Move to top of document */
 }
 
-.wrapper { /* designs container */		
-	background: radial-gradient(rgba(255,255,0,0.6), rgba(255,255,255,0) 60%);	
+.wrapper { /* Designs container */		
+	background: radial-gradient(at 50% 43%, rgba(255,255,0,0.6), rgba(255,255,255,0) 60%);	
 }
 
 .design-selection > h3,
 .design-archives > h3,
 .zen-resources > h3{
 	font-style: italic;
-	text-shadow: 0 0 2px rgb(203, 255, 173);
+	text-shadow: 0 0 2px rgb(187, 255, 173);
 }
 
 .design-selection > h3 {	
@@ -228,7 +201,7 @@ li {
 	float: left;
 	clear: both;
 	border-radius: 50%;
-	z-index: 1; /* Make sure links hoverable. */
+	z-index: 1; /* Make sure links are hoverable */
 }
 .design-selection > nav > ul > li:nth-of-type(even) {	
 	padding-left: 0.35em;
@@ -238,7 +211,7 @@ li {
 	float: right;
 	display: block;
 	border-radius: 50%;
-	z-index: 1; /* Make sure links are hoverable. */
+	z-index: 1; /* Make sure links are hoverable */
 }
 
 .design-selection > nav > ul > li:nth-of-type(1) {
@@ -286,6 +259,7 @@ li {
 	display: flex;
 	justify-content: center;
 }
+
 .design-archives > nav > ul li {
 	margin: 0 0.15em;
 	width: 7em;
@@ -294,9 +268,6 @@ li {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* Resources styling                                                         */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-.zen-resources {
-	order: 5;
-}
 .zen-resources > h3 {
 	margin: 1em 0 0.2em 0;
 }
@@ -307,8 +278,7 @@ li {
 }
 
 .zen-resources > ul li {
-	margin: 0 0.5em;
-	min-width: 12%;
+	margin: 0 0.2em;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -322,4 +292,55 @@ footer {
 	border: 2px solid black;
 	border-top: none;	
 	font-size: 1.1em;
+	width: 97%;
+}
+
+@media(max-width: 960px) {
+	P {
+		letter-spacing: 0.04em;
+		word-spacing: 0.08em;
+	}
+	.summary > p,
+	.explanation > p,
+	.benefits > p,
+	.requirements > p:nth-of-type(5) {
+		max-width: 55%;
+	}
+}
+
+@media(max-width: 800px) {
+	P {
+		letter-spacing: 0.02em;
+		word-spacing: 0.04em;
+	}
+	.summary > p,
+	.explanation > p,
+	.benefits > p,
+	.requirements > p:nth-of-type(5) {
+		max-width: 60%;
+	}
+}
+
+@media(max-width: 480px) {
+	P {
+		letter-spacing: 0.01em;
+		word-spacing: 0.02em;
+		padding: 0.25em;
+		text-align: center;
+	}
+	.summary > p,
+	.explanation > p,
+	.benefits > p,
+	.requirements > p:nth-of-type(5) {
+		max-width: 65%;
+	}
+}
+
+@media(max-width: 320px) {
+	P {		
+		letter-spacing: 0;
+		word-spacing: 0;
+		padding: 0;
+		text-align: center;
+	}
 }
